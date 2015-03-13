@@ -1,4 +1,4 @@
-<div id="reviews">
+<div id="reviews" class="columns sixteen">
   <h6 class="product-section-title"><%= Spree.t(:reviews) %></h6>
   <% if Spree::Reviews::Config[:include_unapproved_reviews] == false and @product.reviews.approved.count == 0 %>
     <p class="reviews-none"><%= Spree.t('no_reviews_available') %></p>
